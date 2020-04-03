@@ -6,7 +6,7 @@ class Header extends Component {
     return (
       <React.Fragment>
         <h4 className="header">
-          VLADIMIR MATVIETS <span>2020</span>
+          VLADIMIR MATVIETS <span className="header-span">2020</span>
         </h4>
       </React.Fragment>
     );

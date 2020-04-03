@@ -3,6 +3,7 @@ import "./App.css";
 import Gallery from "./components/gallery";
 import Menu from "./components/menu";
 import Header from "./components/header";
+import "./fonts/fonts.css";
 import "bootstrap/dist/css/bootstrap.css";
 class App extends Component {
   state = {

@@ -1,10 +1,20 @@
 li {
+  font-family: "Sacramento";
   list-style-type: none;
 }
 
+.nav {
+  padding-top: 50px;
+}
 .nav-link {
   color: black;
 }
 .header {
   padding-top: 200px;
+  padding-left: 15px;
+  font-family: "Sacramento";
+}
+
+.header-span {
+  padding-left: 35px;
 }
