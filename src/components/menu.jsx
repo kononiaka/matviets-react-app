@@ -17,7 +17,7 @@ class Menu extends Component {
         </li>
         <li class="nav-item mb-2">
           <a class="nav-link" href="javascript:void(0)">
-            About
+            About1
           </a>
         </li>
         <li class="nav-item mb-2">
