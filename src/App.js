@@ -8,13 +8,13 @@ import "bootstrap/dist/css/bootstrap.css";
 class App extends Component {
   state = {
     images: [
-      { src: require("./img/no_img.jpg") },
-      { src: require("./img/no_img.jpg") },
-      { src: require("./img/no_img.jpg") },
-      { src: require("./img/no_img.jpg") },
-      { src: require("./img/no_img.jpg") },
-      { src: require("./img/no_img.jpg") }
-    ]
+      { id: 1, src: require("./img/no_img.jpg") },
+      { id: 2, src: require("./img/no_img.jpg") },
+      { id: 3, src: require("./img/no_img.jpg") },
+      { id: 4, src: require("./img/no_img.jpg") },
+      { id: 5, src: require("./img/no_img.jpg") },
+      { id: 6, src: require("./img/no_img.jpg") },
+    ],
   };
   render() {
     return (

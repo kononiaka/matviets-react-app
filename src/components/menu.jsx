@@ -4,40 +4,40 @@ class Menu extends Component {
   state = {};
   render() {
     return (
-      <ul class="nav flex-column">
-        <li class="nav-item mb-2">
-          <a class="nav-link active " href="javascript:void(0)">
+      <ul className="nav flex-column">
+        <li className="nav-item mb-2">
+          <a className="nav-link active " href="#" alt="1">
             Home
           </a>
         </li>
-        <li class="nav-item mb-2">
-          <a class="nav-link" href="javascript:void(0)">
+        <li className="nav-item mb-2">
+          <a className="nav-link" href="#" alt="1">
             Works
           </a>
         </li>
-        <li class="nav-item mb-2">
-          <a class="nav-link" href="javascript:void(0)">
+        <li className="nav-item mb-2">
+          <a className="nav-link" href="#" alt="1">
             About
           </a>
         </li>
-        <li class="nav-item mb-2">
-          <a class="nav-link" href="javascript:void(0)">
+        <li className="nav-item mb-2">
+          <a className="nav-link" href="#" alt="1">
             Exhibition
           </a>
         </li>
-        <li class="nav-item mb-2">
-          <a class="nav-link" href="javascript:void(0)">
+        <li className="nav-item mb-2">
+          <a className="nav-link" href="#" alt="1">
             Store
           </a>
         </li>
-        <li class="nav-item mb-2">
-          <a class="nav-link" href="javascript:void(0)">
+        <li className="nav-item mb-2">
+          <a className="nav-link" href="#" alt="1">
             Contact
           </a>
         </li>
-        <li class="nav-item mb-2">
-          <a class="nav-link" href="javascript:void(0)">
-            <i class="fab fa-instagram"></i>
+        <li className="nav-item mb-2">
+          <a className="nav-link" href="#">
+            <i className="fab fa-instagram"></i>
           </a>
         </li>
       </ul>

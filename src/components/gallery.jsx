@@ -1,35 +1,12 @@
-import * as React from "react";
-import Masonry from "react-masonry-component";
+import React from "react";
 
-const masonryOptions = {
-  transitionDuration: 0
+const Gallery = (props) => {
+  const galleryItems = props.elements.map((i) => (
+    <div className="galleryItem" key={i.id}>
+      <img src={i.src} />
+    </div>
+  ));
+  return <div className="gallery">{galleryItems}</div>;
 };
-
-const imagesLoadedOptions = { background: ".my-bg-image-el" };
-
-class Gallery extends React.Component {
-  render() {
-    const childElements = this.props.elements.map(function(element) {
-      return (
-        <li className="image-element-class m-3">
-          <img src={element.src} />
-        </li>
-      );
-    });
-
-    return (
-      <Masonry
-        className={"my-gallery-class"} // default ''
-        elementType={"div"} // default 'div'
-        options={masonryOptions} // default {}
-        disableImagesLoaded={false} // default false
-        updateOnEachImageLoad={false} // default false and works only if disableImagesLoaded is false
-        imagesLoadedOptions={imagesLoadedOptions} // default {}
-      >
-        {childElements}
-      </Masonry>
-    );
-  }
-}
 
 export default Gallery;
