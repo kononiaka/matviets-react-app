@@ -19,7 +19,7 @@ class App extends Component {
   render() {
     return (
       <React.Fragment>
-        <div className="container">
+        <div className="custom-container">
           <Header></Header>
           <div className="row">
             <div className="col-3">

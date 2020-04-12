@@ -5,9 +5,14 @@ class Header extends Component {
   render() {
     return (
       <React.Fragment>
-        <h4 className="header">
-          VLADIMIR MATVIETS <span className="header-span">2020</span>
-        </h4>
+        <div className="row">
+          <div className="col-3">
+            <h4 className="header ">VLADIMIR MATVIETS</h4>
+          </div>
+          <div className="col">
+            <h5 className="header-span  ">2020</h5>
+          </div>
+        </div>
       </React.Fragment>
     );
   }

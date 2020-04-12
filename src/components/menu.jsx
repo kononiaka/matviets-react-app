@@ -37,7 +37,7 @@ class Menu extends Component {
         </li>
         <li className="nav-item mb-2">
           <a className="nav-link" href="#">
-            <i className="fab fa-instagram"></i>
+            <i class="fab fa-instagram"></i>
           </a>
         </li>
       </ul>
