@@ -1,8 +1,8 @@
 import React from "react";
 
-const Gallery = (props) => {
-  const galleryItems = props.elements.map((element) => (
-    <div className="galleryItem mt-4" key={element.id}>
+const Gallery = props => {
+  const galleryItems = props.elements.map(element => (
+    <div className="galleryItem" key={element.id}>
       <img src={element.src} />
     </div>
   ));
