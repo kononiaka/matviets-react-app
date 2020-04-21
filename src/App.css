@@ -74,4 +74,9 @@ img {
   .nav {
     font-size: 13px;
   }
+  .nav-link:hover {
+    font-size: 1.2em;
+    color: red;
+    opacity: 0.5;
+  }
 }
