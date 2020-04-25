@@ -1,4 +1,5 @@
 import React from "react";
+import "./Gallery.css";
 
 const Gallery = props => {
   const galleryItems = props.elements.map(element => (

@@ -1,12 +1,10 @@
 import React, { Component } from "react";
 import "./App.css";
-import Gallery from "./components/gallery";
-import Menu from "./components/menu/Menu";
-import Header from "./components/header/Header";
+import Home from "./components/menu/Home";
 import "./fonts/fonts.css";
 import "bootstrap/dist/css/bootstrap.css";
 import { Route, Switch } from "react-router";
-import Works from "./components/Works";
+import Works from "./components/works/Works";
 import About from "./components/about/About";
 import Exhibition from "./components/exhibition/Exhibition";
 import Store from "./components/store/store";
@@ -24,24 +22,20 @@ class App extends Component {
   };
   render() {
     return (
-      <div className="custom-container">
-        <Switch>
-          <Header></Header>
-          <div className="row">
-            <div className="col-3">
+      <React.Fragment>
+        <div className="container-custom">
+          <div className="content">
+            <Switch>
               <Route path="/contact" component={Contacts}></Route>
               <Route path="/store" component={Store}></Route>
               <Route path="/exhibition" component={Exhibition}></Route>
               <Route path="/about" component={About}></Route>
               <Route path="/works" component={Works}></Route>
-              <Route path="/" component={Menu}></Route>
-            </div>
-            <div className="col-9">
-              <Gallery elements={this.state.images} />
-            </div>
+              <Route path="/" component={Home}></Route>
+            </Switch>
           </div>
-        </Switch>
-      </div>
+        </div>
+      </React.Fragment>
     );
   }
 }
