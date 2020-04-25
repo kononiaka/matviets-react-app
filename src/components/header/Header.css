@@ -1,0 +1,12 @@
+.header {
+  font-family: "Sacramento";
+  font-weight: bold;
+  padding: 100px 0 33px 15px;
+}
+
+.header-span {
+  font-family: "Sacramento";
+  padding: 100px 0 38px;
+  font-size: 17px;
+  font-weight: bold;
+}
