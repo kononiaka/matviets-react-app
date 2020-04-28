@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Img from "../../img/no_img_works.jpg";
 
 const About = () => {
   return (
@@ -40,8 +41,11 @@ const About = () => {
             <i className="fab fa-instagram"></i>
           </Link>
         </div>
-        <div className="col">
-          <h3>TEXT</h3>
+        <div className="works-img col">
+          <img src={Img} alt="" />
+          <h6 className="works-text">
+            Sorry. This content is currently unavailable
+          </h6>
         </div>
       </div>
     </>

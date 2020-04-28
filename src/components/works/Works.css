@@ -8,9 +8,12 @@ h3 {
   text-align: center;
 }
 
+h6 {
+  text-align: center;
+}
 .works-text {
   text-align: center;
-  padding-top: 150px;
+  padding-top: 100px;
 }
 
 .disabled {

@@ -7,7 +7,7 @@ import { Route, Switch } from "react-router";
 import Works from "./components/works/Works";
 import About from "./components/about/About";
 import Exhibition from "./components/exhibition/Exhibition";
-import Store from "./components/store/store";
+import Store from "./components/store/Store";
 import Contacts from "./components/contacts/Contacts";
 class App extends Component {
   state = {

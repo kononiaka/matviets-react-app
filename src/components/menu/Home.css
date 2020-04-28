@@ -1,4 +1,13 @@
 @media (max-width: 2400px) {
+  .main {
+    margin-top: 300px;
+    margin-left: 150px;
+    height: 900px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+  }
   .nav {
     padding-top: 30px;
   }
@@ -29,7 +38,19 @@
     cursor: pointer;
   }
 
-  /* TODO make active class for current page*/
+  .enter-site-btn {
+    font-family: "Sacramento";
+    color: black;
+    text-decoration: none;
+    padding: 15px 30px;
+    border: 1px solid black;
+    height: 60px;
+  }
+  .enter-site-btn:hover {
+    text-decoration: none;
+    color: rgb(226, 24, 24);
+    font-weight: 600;
+  }
 }
 @media (max-width: 400px) {
   .galleryItem img {

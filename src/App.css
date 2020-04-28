@@ -1,3 +1,7 @@
+.background {
+  background-image: url("./img/no_img_works.jpg");
+  height: 100vh;
+}
 @media (max-width: 2048px) {
   .container-custom {
     margin: 0 auto;
