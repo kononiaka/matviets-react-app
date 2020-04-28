@@ -23,17 +23,15 @@ class App extends Component {
   render() {
     return (
       <React.Fragment>
-        <div className="container-custom">
-          <div className="content">
-            <Switch>
-              <Route path="/contact" component={Contacts}></Route>
-              <Route path="/store" component={Store}></Route>
-              <Route path="/exhibition" component={Exhibition}></Route>
-              <Route path="/about" component={About}></Route>
-              <Route path="/works" component={Works}></Route>
-              <Route path="/" component={Home}></Route>
-            </Switch>
-          </div>
+        <div className="content">
+          <Switch>
+            <Route path="/contact" component={Contacts}></Route>
+            <Route path="/store" component={Store}></Route>
+            <Route path="/exhibition" component={Exhibition}></Route>
+            <Route path="/about" component={About}></Route>
+            <Route path="/works" component={Works}></Route>
+            <Route path="/" component={Home}></Route>
+          </Switch>
         </div>
       </React.Fragment>
     );

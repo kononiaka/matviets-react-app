@@ -10,12 +10,11 @@ const Home = () => {
           Enter
         </Link>
 
-        <Link
+        <a
           className="nav-link-custom"
-          to="https://www.facebook.com/vladimir.kononiaka"
-          href="#">
-          <i className="fab fa-instagram"></i>
-        </Link>
+          href="https://www.instagram.com/matviets.vladimir.artist/">
+          <i className="home fab fa-instagram"></i>
+        </a>
       </div>
     </>
   );

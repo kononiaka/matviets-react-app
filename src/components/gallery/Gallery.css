@@ -1,13 +1,22 @@
-@media (max-width: 2048px) {
+.gallery {
+  display: grid;
+  width: 850px;
+  grid-template-columns: 33.3% 33.3% 33.3%;
+  grid-gap: 27px;
+}
+
+.galleryItem img {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+@media (max-width: 450px) {
   .gallery {
     display: grid;
-    width: 1280px;
-    grid-template-columns: 33.3% 33.3% 33.3%;
+    grid-template-columns: 33.3%;
     grid-gap: 27px;
   }
-
   .galleryItem img {
-    width: 100%;
-    height: 100%;
+    padding-left: 45px;
   }
 }

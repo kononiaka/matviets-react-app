@@ -5,7 +5,7 @@ const Header = () => {
   return (
     <React.Fragment>
       <div className="row">
-        <div className="col-2">
+        <div className="col-3">
           <h4 className="header">MATVIETS VLADIMIR</h4>
         </div>
         <div className="col">

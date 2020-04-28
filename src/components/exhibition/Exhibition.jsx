@@ -4,48 +4,48 @@ import { Link } from "react-router-dom";
 const Exhibition = () => {
   return (
     <>
-      <div className="row">
-        <div className="col-2">
-          <h4 className="header">MATVIETS VLADIMIR</h4>
-        </div>
-      </div>
-      <div className="row">
-        <div className="nav flex-column сol-5">
-          <Link className="nav-link-custom  " to="/" href="#" alt="1">
-            Home
-          </Link>
+      <div className="container-custom">
+        <h4 className="header">MATVIETS VLADIMIR</h4>
 
-          <Link className="nav-link-custom" to="/works" href="#" alt="1">
-            Works
-          </Link>
+        <div className="row">
+          <div className="nav flex-column сol-5">
+            <Link className="nav-link-custom  " to="/" href="#" alt="1">
+              Home
+            </Link>
 
-          <Link className="nav-link-custom" to="/about" href="#" alt="1">
-            About
-          </Link>
+            <Link className="nav-link-custom" to="/works" href="#" alt="1">
+              Works
+            </Link>
 
-          <Link
-            className="nav-link-custom active"
-            to="/exhibition"
-            href="#"
-            alt="1">
-            Exhibition
-          </Link>
+            <Link className="nav-link-custom" to="/about" href="#" alt="1">
+              About
+            </Link>
 
-          <Link className="nav-link-custom" to="/store" href="#" alt="1">
-            Store
-          </Link>
-          <Link className="nav-link-custom" to="/contact" href="#" alt="1">
-            Contact
-          </Link>
-          <Link
-            className="nav-link-custom"
-            to="https://www.facebook.com/vladimir.kononiaka"
-            href="#">
-            <i className="fab fa-instagram"></i>
-          </Link>
-        </div>
-        <div className="col">
-          <h6>Sorry. This content is currently unavailable</h6>
+            <Link
+              className="nav-link-custom active"
+              to="/exhibition"
+              href="#"
+              alt="1">
+              Exhibition
+            </Link>
+
+            <Link className="nav-link-custom" to="/store" href="#" alt="1">
+              Store
+            </Link>
+            <Link className="nav-link-custom" to="/contact" href="#" alt="1">
+              Contact
+            </Link>
+            <a
+              className="nav-link-custom"
+              href="https://www.instagram.com/matviets.vladimir.artist/">
+              <i className="fab fa-instagram"></i>
+            </a>
+          </div>
+          <div className="col">
+            <h6 className="store-text">
+              Sorry. This content is currently unavailable
+            </h6>
+          </div>
         </div>
       </div>
     </>

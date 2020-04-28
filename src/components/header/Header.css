@@ -1,4 +1,4 @@
-@media (max-width: 2048px) {
+@media (max-width: 1366px) {
   .header {
     font-family: "Sacramento";
     font-weight: bold;
@@ -7,8 +7,14 @@
 
   .header-span {
     font-family: "Sacramento";
-    padding: 100px 50px 38px;
+    padding: 100px 0px 38px;
     font-size: 17px;
     font-weight: bold;
+  }
+}
+@media (max-width: 450px) {
+  .header-span {
+    padding: 100px 0px 38px 50px;
+    font-size: 12px;
   }
 }

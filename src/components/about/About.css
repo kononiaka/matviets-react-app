@@ -1,0 +1,12 @@
+.about-img img {
+  width: 80%;
+  height: 55%;
+  margin-left: 200px;
+  margin-top: -65px;
+}
+@media (max-width: 450px) {
+  .about-img img {
+    margin-top: 0;
+    margin-left: 100px;
+  }
+}
