@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "./App.css";
-import Home from "./components/menu/Home";
+import Home from "./components/home/Home";
 import "./fonts/fonts.css";
 import "bootstrap/dist/css/bootstrap.css";
 import { Route, Switch } from "react-router";

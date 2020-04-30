@@ -1,71 +1,59 @@
-h3 {
-  text-align: center;
-}
+@media only screen and (max-width: 2048px) and (min-width: 451px) {
+  h3 {
+    text-align: center;
+  }
 
-h6 {
-  text-align: center;
-}
-.works-text {
-  text-align: center;
-  padding-top: 100px;
-}
+  h6 {
+    text-align: center;
+  }
+  .works-text {
+    text-align: center;
+    padding-top: 100px;
+  }
 
-.disabled {
-  display: none;
-}
+  .disabled {
+    display: none;
+  }
 
-.nav {
-  padding-top: 30px;
-}
-.nav-link-custom {
-  color: black;
-  transition: all 0.5s ease;
-  font-family: "Sacramento";
-  padding: 25px 0 0 15px;
-}
-.nav-link-custom:nth-last-child(2) {
-  padding-bottom: 0;
-}
-.nav-link-custom:last-child {
-  padding-top: 20px;
-}
+  .nav-link-custom:first-child {
+    padding-top: 40px;
+  }
 
-.nav-link-custom:hover {
-  color: red;
-  transition-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
-  opacity: 0.5;
-  text-decoration: none;
-}
+  .nav-link-custom {
+    color: black;
+    transition: all 0.5s ease;
+    font-family: "Sacramento";
+    padding: 27px 0 0px 15px;
+    font-size: 17px;
+  }
 
-.nav-link-custom.active {
-  color: red;
-}
+  .nav-link-custom:last-child {
+    padding-top: 24px;
+  }
 
-.enter-site-btn {
-  font-family: "Sacramento";
-  color: black;
-  text-decoration: none;
-  padding: 15px 30px;
-  border: 1px solid black;
-  height: 60px;
-  background-color: white;
-}
-.enter-site-btn:hover {
-  text-decoration: none;
-  color: rgb(226, 24, 24);
-  font-weight: 600;
-}
-.home.fab.fa-instagram {
-  font-size: 20px;
-  margin-bottom: 15px;
-  margin-left: 15px;
-}
+  .nav-link-custom:hover {
+    color: red;
+    transition-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+    opacity: 0.5;
+    text-decoration: none;
+  }
 
+  .nav-link-custom.active {
+    color: red;
+  }
+  .fab.fa-instagram {
+    font-size: 23px;
+  }
+}
 @media (max-width: 450px) {
   .nav {
+    padding-top: 0;
     font-size: 13px;
   }
   .nav-link:hover {
     color: red;
+  }
+  .works-text {
+    font-size: 10px;
   }
 }

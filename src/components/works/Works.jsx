@@ -58,7 +58,7 @@ class Works extends Component {
                 <i className="fab fa-instagram"></i>
               </a>
             </div>
-            <div className="col-8">
+            <div className="col">
               <Gallery elements={this.state.images} />
             </div>
           </div>

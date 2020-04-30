@@ -9,7 +9,7 @@ const Contacts = () => {
         <h4 className="header">MATVIETS VLADIMIR</h4>
 
         <div className="row">
-          <div className="nav flex-column сol-5">
+          <div className="nav nav-about flex-column сol-5">
             <Link className="nav-link-custom  " to="/" href="#" alt="1">
               Home
             </Link>

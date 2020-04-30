@@ -1,37 +1,51 @@
-h6 {
-  font-family: "Sacramento";
-}
+@media only screen and (max-width: 2048px) and (min-width: 451px) {
+  h6 {
+    font-family: "Sacramento";
+  }
 
-.text-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
-.general-inquriries {
-  font-size: 14px;
-  color: #848484;
-}
-.general-inquriries-mail {
-  margin-top: 15px;
-  font-size: 19px;
-  font-weight: 600;
-}
-.message-send {
-  margin-top: 82px;
-  background-color: #dfdfdf;
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  border-radius: 15px;
-  text-transform: uppercase;
-  transition: all 0.6s;
-}
+  .text-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .general-inquriries {
+    font-size: 14px;
+    color: #848484;
+  }
+  .general-inquriries-mail {
+    margin-top: 15px;
+    font-size: 19px;
+    font-weight: 600;
+  }
+  .message-send {
+    margin-top: 82px;
+    color: black;
+    padding: 15px 32px;
+    text-decoration: none;
+    font-size: 16px;
+    text-transform: uppercase;
+    transition: all 0.6s;
+    border: 1px solid black;
+  }
 
-.message-send:hover {
-  background-color: #acaaaa;
+  .message-send:hover {
+    background-color: white;
+  }
+}
+@media (max-width: 450px) {
+  .general-inquriries {
+    font-size: 10px;
+  }
+  .general-inquriries-mail {
+    font-size: 15px;
+  }
+  .nav-about {
+    margin-right: 50px;
+  }
+  .message-send {
+    margin-top: 45px;
+    font-size: 12px;
+    padding: 10px 25px;
+  }
 }

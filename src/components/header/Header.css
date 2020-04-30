@@ -1,18 +1,22 @@
-@media (max-width: 1366px) {
+@media only screen and (max-width: 2048px) and (min-width: 451px) {
   .header {
     font-family: "Sacramento";
-    font-weight: bold;
-    padding: 100px 0 33px;
+    margin: 95px 0 33px;
+    font-size: 25px;
   }
 
   .header-span {
     font-family: "Sacramento";
-    padding: 100px 0px 38px;
+    margin: 100px 0px 30px -30px;
     font-size: 17px;
-    font-weight: bold;
   }
 }
 @media (max-width: 450px) {
+  .header {
+    padding-top: 30px;
+    padding-left: 15px;
+    font-size: 17px;
+  }
   .header-span {
     padding: 100px 0px 38px 50px;
     font-size: 12px;

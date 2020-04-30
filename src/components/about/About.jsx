@@ -9,7 +9,7 @@ const About = () => {
       <div className="container-custom">
         <h4 className="header">MATVIETS VLADIMIR</h4>
         <div className="row">
-          <div className="nav flex-column сol">
+          <div className="nav flex-column col-3">
             <Link className="nav-link-custom  " to="/" href="#" alt="1">
               Home
             </Link>

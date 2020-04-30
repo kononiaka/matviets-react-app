@@ -43,7 +43,7 @@ const Store = () => {
             </a>
           </div>
           <div className="col">
-            <h6 className="store-text">
+            <h6 className="works-text">
               Sorry. This content is currently unavailable
             </h6>
           </div>
