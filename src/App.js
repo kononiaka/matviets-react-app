@@ -1,10 +1,14 @@
 import React, { Component } from "react";
 import "./App.css";
-import Gallery from "./components/gallery";
-import Menu from "./components/menu";
-import Header from "./components/header";
+import Home from "./components/menu/Home";
 import "./fonts/fonts.css";
 import "bootstrap/dist/css/bootstrap.css";
+import { Route, Switch } from "react-router";
+import Works from "./components/works/Works";
+import About from "./components/about/About";
+import Exhibition from "./components/exhibition/Exhibition";
+import Store from "./components/store/Store.jsx";
+import Contacts from "./components/contacts/Contacts";
 class App extends Component {
   state = {
     images: [
@@ -19,16 +23,15 @@ class App extends Component {
   render() {
     return (
       <React.Fragment>
-        <div className="custom-container">
-          <Header></Header>
-          <div className="row">
-            <div className="col-3">
-              <Menu> </Menu>
-            </div>
-            <div className="col-9">
-              <Gallery elements={this.state.images} />
-            </div>
-          </div>
+        <div className="content">
+          <Switch>
+            <Route path="/contact" component={Contacts}></Route>
+            <Route path="/store" component={Store}></Route>
+            <Route path="/exhibition" component={Exhibition}></Route>
+            <Route path="/about" component={About}></Route>
+            <Route path="/works" component={Works}></Route>
+            <Route path="/" component={Home}></Route>
+          </Switch>
         </div>
       </React.Fragment>
     );
