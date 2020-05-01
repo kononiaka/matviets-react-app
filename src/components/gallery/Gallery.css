@@ -3,13 +3,13 @@
     display: grid;
     width: 850px;
     grid-template-columns: 33.3% 33.3% 33.3%;
-    grid-gap: 27px;
+    grid-gap: 50px;
   }
 
   .galleryItem img {
     margin-left: -32px;
-    width: 105%;
-    height: 105%;
+    width: 110%;
+    height: 98%;
     cursor: pointer;
   }
 }
