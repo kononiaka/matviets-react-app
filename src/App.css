@@ -1,25 +1,13 @@
 @media only screen and (max-width: 2048px) and (min-width: 451px) {
   .container-custom {
     margin: 0 auto;
-    width: 80%;
+    width: 90%;
   }
 }
 @media (max-width: 450px) {
-  .header-span {
-    padding-top: 55px;
-    padding-left: 65px;
-    font-size: 13px;
-  }
   .container-custom {
     margin: 0 auto;
     width: 80%;
     font-weight: bold;
-  }
-  .nav {
-    font-size: 13px;
-  }
-
-  .nav-link-custom.active {
-    color: red;
   }
 }
