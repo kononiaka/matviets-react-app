@@ -1,18 +1,18 @@
 .gallery {
   display: grid;
   grid-template-columns: 33.3% 33.3% 33.3%;
-  grid-gap: 27px;
+  grid-gap: 22px;
 }
 
 .galleryItem {
-  margin-left: -22px;
-  margin-bottom: 7px;
+  margin-left: -33px;
+  margin-bottom: 5px;
   cursor: pointer;
 }
 
 .galleryItem img {
-  width: 93%;
-  height: 85%;
+  width: 89%;
+  height: 99%;
 }
 
 @media (max-width: 450px) {
@@ -27,6 +27,5 @@
   }
   .galleryItem:nth-last-child(-n + 5) {
     margin-top: -35px;
-    border: 1px solid red;
   }
 }
