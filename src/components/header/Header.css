@@ -9,6 +9,15 @@
   margin: 100px 0px 30px -33px;
   font-size: 17px;
 }
+@media (max-width: 1800px) {
+  .header-menu {
+    display: none;
+  }
+  .links {
+    padding-left: 15px;
+    width: 25%;
+  }
+}
 
 @media (max-width: 450px) {
   .header {
@@ -18,5 +27,12 @@
 
   .header-span.disabled {
     display: none;
+  }
+
+  .header-menu {
+    display: block;
+    font-size: 15px;
+    margin-top: 15px;
+    text-align: right;
   }
 }
