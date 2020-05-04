@@ -23,8 +23,8 @@
   color: rgb(226, 24, 24);
   font-weight: 600;
 }
-.home.fab.fa-instagram {
-  margin-top: 50px;
+.home.nav-link-custom {
+  margin-top: 30px;
   font-size: 25px;
   margin-bottom: 15px;
   margin-left: -15px;

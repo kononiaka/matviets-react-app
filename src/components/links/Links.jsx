@@ -1,39 +1,48 @@
-import React from "react";
+import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import "./Links.css";
 
-const Links = () => {
-  return (
-    <div className="nav flex-column">
-      <Link className="nav-link-custom" to="/" href="#" alt="1">
-        Home
-      </Link>
+class Links extends Component {
+  state = {
+    menuItems: [
+      { name: "Home", isActive: false, route: "/" },
+      { name: "Works", isActive: true, route: "/works" },
+      { name: "About", isActive: false, route: "/about" },
+      { name: "Exhibition", isActive: false, route: "/exhibition" },
+      { name: "Store", isActive: false, route: "/store" },
+      { name: "Contact", isActive: false, route: "/contact" },
+    ],
+  };
 
-      <Link className="nav-link-custom active" to="/works" href="#" alt="1">
-        Works
-      </Link>
+  handleClick = name => {
+    this.setState(state => {
+      const menuItems = state.menuItems.map(item => ({
+        ...item,
+        isActive: item.name === name,
+      }));
 
-      <Link className="nav-link-custom" to="/about" href="#" alt="1">
-        About
-      </Link>
+      return { menuItems };
+    });
+  };
 
-      <Link className="nav-link-custom" to="/exhibition" href="#" alt="1">
-        Exhibition
-      </Link>
+  render() {
+    console.log(this.state);
+    const menu = this.state.menuItems.map(item => {
+      const classes = `nav-link-custom${item.isActive ? " active" : ""}`;
+      return (
+        <Link
+          onClick={() => this.handleClick(item.name)}
+          className={classes}
+          to={item.route}
+          href="#"
+          alt="1">
+          {item.name}
+        </Link>
+      );
+    });
 
-      <Link className="nav-link-custom" to="/store" href="#" alt="1">
-        Store
-      </Link>
-      <Link className="nav-link-custom" to="/contact" href="#" alt="1">
-        Contact
-      </Link>
-      <a
-        className="nav-link-custom"
-        href="https://www.instagram.com/matviets.vladimir.artist/">
-        <i className="fab fa-instagram"></i>
-      </a>
-    </div>
-  );
-};
+    return <div className="nav flex-column">{menu}</div>;
+  }
+}
 
 export default Links;

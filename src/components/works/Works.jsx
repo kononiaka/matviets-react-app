@@ -1,8 +1,6 @@
 import React, { Component } from "react";
 import "./Works.css";
 import Gallery from "../gallery/Gallery";
-import Header from "../header/Header";
-import Links from "../links/Links";
 
 class Works extends Component {
   state = {
@@ -18,16 +16,17 @@ class Works extends Component {
   render() {
     return (
       <>
-        <div className="container-custom">
-          <Header></Header>
-          <div className="row">
-            <div className="links">
-              <Links></Links>
-            </div>
+        <div className="row">
+          <div className="links">
+            <a
+              className="nav-link-custom"
+              href="https://www.instagram.com/matviets.vladimir.artist/">
+              <i className="fab fa-instagram"></i>
+            </a>
+          </div>
 
-            <div className="col">
-              <Gallery elements={this.state.images} />
-            </div>
+          <div className="col">
+            <Gallery elements={this.state.images} />
           </div>
         </div>
       </>

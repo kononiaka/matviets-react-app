@@ -23,6 +23,11 @@ h6 {
   font-size: 17px;
 }
 
+.nav-link-custom i {
+  padding-top: 25px;
+  color: #000;
+}
+
 .nav-link-custom:last-child {
   padding-top: 24px;
 }
@@ -58,6 +63,7 @@ h6 {
   .nav-link-custom {
     color: #fff;
   }
+
   .nav-link-custom.active {
     color: red;
   }

@@ -9,6 +9,8 @@ import About from "./components/about/About";
 import Exhibition from "./components/exhibition/Exhibition";
 import Store from "./components/store/Store.jsx";
 import Contacts from "./components/contacts/Contacts";
+import Links from "./components/links/Links";
+import Header from "./components/header/Header";
 class App extends Component {
   state = {
     images: [
@@ -23,15 +25,22 @@ class App extends Component {
   render() {
     return (
       <React.Fragment>
-        <div className="content">
-          <Switch>
-            <Route path="/contact" component={Contacts}></Route>
-            <Route path="/store" component={Store}></Route>
-            <Route path="/exhibition" component={Exhibition}></Route>
-            <Route path="/about" component={About}></Route>
-            <Route path="/works" component={Works}></Route>
-            <Route path="/" component={Home}></Route>
-          </Switch>
+        <div className="container-custom">
+          <div className="content">
+            <Header></Header>
+            <div className="row">
+              <Links></Links>
+
+              <Switch>
+                <Route path="/contact" component={Contacts}></Route>
+                <Route path="/store" component={Store}></Route>
+                <Route path="/exhibition" component={Exhibition}></Route>
+                <Route path="/about" component={About}></Route>
+                <Route path="/works" component={Works}></Route>
+                <Route path="/" component={Home}></Route>
+              </Switch>
+            </div>
+          </div>
         </div>
       </React.Fragment>
     );

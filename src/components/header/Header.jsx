@@ -4,7 +4,6 @@ import "./Header.css";
 const Header = () => {
   return (
     <React.Fragment>
-      <div className="header-menu">Menu</div>
       <div className="row">
         <div className="col-3">
           <h4 className="header">MATVIETS VLADIMIR</h4>

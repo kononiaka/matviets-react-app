@@ -11,9 +11,9 @@ const Home = () => {
         </Link>
 
         <a
-          className="nav-link-custom"
+          className="home nav-link-custom"
           href="https://www.instagram.com/matviets.vladimir.artist/">
-          <i className="home fab fa-instagram"></i>
+          <i className="fab fa-instagram"></i>
         </a>
       </div>
     </>
