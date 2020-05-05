@@ -26,7 +26,6 @@ class Links extends Component {
   };
 
   render() {
-    console.log(this.state);
     const menu = this.state.menuItems.map(item => {
       const classes = `nav-link-custom${item.isActive ? " active" : ""}`;
       return (
@@ -41,7 +40,16 @@ class Links extends Component {
       );
     });
 
-    return <div className="nav flex-column">{menu}</div>;
+    return (
+      <div className="nav flex-column">
+        {menu}
+        <a
+          className="nav-link-custom"
+          href="https://www.instagram.com/matviets_vladimir_artist/">
+          <i className="fab fa-instagram"></i>
+        </a>
+      </div>
+    );
   }
 }
 

@@ -16,18 +16,9 @@ class Works extends Component {
   render() {
     return (
       <>
-        <div className="row">
-          <div className="links">
-            <a
-              className="nav-link-custom"
-              href="https://www.instagram.com/matviets.vladimir.artist/">
-              <i className="fab fa-instagram"></i>
-            </a>
-          </div>
-
-          <div className="col">
-            <Gallery elements={this.state.images} />
-          </div>
+        <div className="col-2 flex-column"></div>
+        <div className="col">
+          <Gallery elements={this.state.images} />
         </div>
       </>
     );
