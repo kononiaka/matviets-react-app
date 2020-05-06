@@ -1,20 +1,15 @@
 .header {
   font-family: "Sacramento";
-  margin: 95px 0 33px -15px;
+  margin: 95px 0 33px -30px;
   font-size: 25px;
 }
 
-.header-span {
-  font-family: "Sacramento";
-  margin: 100px 0px 30px -65px;
-  font-size: 17px;
-}
 @media (max-width: 1800px) {
   .header-menu {
     display: none;
   }
   .links {
-    padding-left: 15px;
+    padding-left: 17px;
     width: 25%;
   }
 }

@@ -5,8 +5,8 @@ import "./Links.css";
 class Links extends Component {
   state = {
     menuItems: [
-      { name: "Home", isActive: false, route: "/" },
-      { name: "Works", isActive: true, route: "/works" },
+      { name: "Home", isActive: true, route: "/" },
+      { name: "Works", isActive: false, route: "/works" },
       { name: "About", isActive: false, route: "/about" },
       { name: "Exhibition", isActive: false, route: "/exhibition" },
       { name: "Store", isActive: false, route: "/store" },
@@ -41,7 +41,7 @@ class Links extends Component {
     });
 
     return (
-      <div className="nav flex-column">
+      <div className="nav flex-column ">
         {menu}
         <a
           className="nav-link-custom"

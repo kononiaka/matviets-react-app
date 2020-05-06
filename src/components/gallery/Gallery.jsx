@@ -7,7 +7,12 @@ const Gallery = props => {
       <img src={element.src} alt="" />
     </div>
   ));
-  return <div className="gallery">{galleryItems}</div>;
+  return (
+    <>
+      <h5 className="gallery-span disabled">2020</h5>
+      <div className="gallery">{galleryItems}</div>
+    </>
+  );
 };
 
 export default Gallery;
