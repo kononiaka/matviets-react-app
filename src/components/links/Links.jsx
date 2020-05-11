@@ -1,11 +1,10 @@
 import React, { Component } from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import "./Links.css";
 
 class Links extends Component {
   state = {
     menuItems: [
-      { name: "Home", isActive: true, route: "/" },
       { name: "Works", isActive: false, route: "/works" },
       { name: "About", isActive: false, route: "/about" },
       { name: "Exhibition", isActive: false, route: "/exhibition" },
@@ -29,14 +28,14 @@ class Links extends Component {
     const menu = this.state.menuItems.map(item => {
       const classes = `nav-link-custom${item.isActive ? " active" : ""}`;
       return (
-        <Link
+        <NavLink
           onClick={() => this.handleClick(item.name)}
           className={classes}
           to={item.route}
           href="#"
           alt="1">
           {item.name}
-        </Link>
+        </NavLink>
       );
     });
 

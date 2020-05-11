@@ -9,43 +9,22 @@ import About from "./components/about/About";
 import Exhibition from "./components/exhibition/Exhibition";
 import Store from "./components/store/Store.jsx";
 import Contacts from "./components/contacts/Contacts";
-import Links from "./components/links/Links";
-import Header from "./components/header/Header";
 import NotFound from "./components/notFound/notFound";
 
 class App extends Component {
-  state = {
-    images: [
-      { id: 1, src: require("./img/no_img.jpg") },
-      { id: 2, src: require("./img/no_img.jpg") },
-      { id: 3, src: require("./img/no_img.jpg") },
-      { id: 4, src: require("./img/no_img.jpg") },
-      { id: 5, src: require("./img/no_img.jpg") },
-      { id: 6, src: require("./img/no_img.jpg") },
-    ],
-  };
   render() {
     return (
       <React.Fragment>
-        <div className="container-custom">
-          <div className="content">
-            <Header></Header>
-            <div className="row">
-              <Links></Links>
-
-              <Switch>
-                <Route path="/contact" component={Contacts}></Route>
-                <Route path="/store" component={Store}></Route>
-                <Route path="/exhibition" component={Exhibition}></Route>
-                <Route path="/about" component={About}></Route>
-                <Route path="/works" component={Works}></Route>
-                <Route path="/not-found" component={NotFound}></Route>
-                <Route path="/" exact component={Home}></Route>
-                <Redirect to="/not-found"></Redirect>
-              </Switch>
-            </div>
-          </div>
-        </div>
+        <Switch>
+          <Route path="/works" component={Works}></Route>
+          <Route path="/contact" component={Contacts}></Route>
+          <Route path="/store" component={Store}></Route>
+          <Route path="/exhibition" component={Exhibition}></Route>
+          <Route path="/about" component={About}></Route>
+          <Route path="/not-found" component={NotFound}></Route>
+          <Route path="/" exact component={Home}></Route>
+          <Redirect to="/not-found"></Redirect>
+        </Switch>
       </React.Fragment>
     );
   }

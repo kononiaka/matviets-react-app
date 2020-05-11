@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import "./Works.css";
 import Gallery from "../gallery/Gallery";
+import Links from "./../links/Links";
+import Header from "./../header/Header";
 
 class Works extends Component {
   state = {
@@ -16,9 +18,15 @@ class Works extends Component {
   render() {
     return (
       <>
-        <div className="col-2 flex-column"></div>
-        <div className="col">
-          <Gallery elements={this.state.images} />
+        <div className="container">
+          <Header></Header>
+          <div className="row">
+            <Links />
+            <div className="col-2 flex-column"></div>
+            <div className="col">
+              <Gallery elements={this.state.images} />
+            </div>
+          </div>
         </div>
       </>
     );

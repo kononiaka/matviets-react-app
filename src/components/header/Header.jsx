@@ -1,11 +1,14 @@
 import React from "react";
 import "./Header.css";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
     <React.Fragment>
-      <div className="col-3">
-        <h4 className="header">MATVIETS VLADIMIR</h4>
+      <div className="header col-3">
+        <Link className="header-text" to="/">
+          MATVIETS VLADIMIR
+        </Link>
       </div>
     </React.Fragment>
   );
