@@ -3,7 +3,7 @@ import "./App.css";
 import Home from "./components/home/Home";
 import "./fonts/fonts.css";
 import "bootstrap/dist/css/bootstrap.css";
-import { Route, Switch } from "react-router";
+import { Route, Switch, Redirect } from "react-router";
 import Works from "./components/works/Works";
 import About from "./components/about/About";
 import Exhibition from "./components/exhibition/Exhibition";
@@ -11,6 +11,8 @@ import Store from "./components/store/Store.jsx";
 import Contacts from "./components/contacts/Contacts";
 import Links from "./components/links/Links";
 import Header from "./components/header/Header";
+import NotFound from "./components/notFound/notFound";
+
 class App extends Component {
   state = {
     images: [
@@ -37,7 +39,9 @@ class App extends Component {
                 <Route path="/exhibition" component={Exhibition}></Route>
                 <Route path="/about" component={About}></Route>
                 <Route path="/works" component={Works}></Route>
-                <Route path="/" component={Home}></Route>
+                <Route path="/not-found" component={NotFound}></Route>
+                <Route path="/" exact component={Home}></Route>
+                <Redirect to="/not-found"></Redirect>
               </Switch>
             </div>
           </div>
