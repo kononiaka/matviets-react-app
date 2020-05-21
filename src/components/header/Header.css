@@ -10,10 +10,6 @@
   .header-menu {
     display: none;
   }
-  .links {
-    padding-left: 17px;
-    width: 25%;
-  }
 }
 
 @media (max-width: 450px) {

@@ -1,0 +1,10 @@
+.menu-block {
+  text-align: right;
+  margin-top: 25px;
+}
+
+.menu-btn {
+  cursor: pointer;
+  border: none;
+  background: transparent;
+}

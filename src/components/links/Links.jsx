@@ -29,6 +29,7 @@ class Links extends Component {
       const classes = `nav-link-custom${item.isActive ? " active" : ""}`;
       return (
         <NavLink
+          key={item.name}
           onClick={() => this.handleClick(item.name)}
           className={classes}
           to={item.route}
@@ -40,7 +41,7 @@ class Links extends Component {
     });
 
     return (
-      <div className="nav flex-column ">
+      <div className="nav flex-column links">
         {menu}
         <a
           className="nav-link-custom"

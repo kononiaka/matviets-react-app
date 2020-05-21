@@ -19,6 +19,9 @@ class Works extends Component {
     return (
       <>
         <div className="container">
+          <div className="menu-block">
+            <button className="menu-btn">Menu</button>
+          </div>
           <Header></Header>
           <div className="row">
             <Links />
