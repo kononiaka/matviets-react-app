@@ -1,25 +1,28 @@
 .gallery {
   display: grid;
   grid-template-columns: 33.3% 33.3% 33.3%;
-  grid-gap: 17px;
+  grid-gap: 65px;
   margin-left: 15px;
 }
 
 .galleryItem {
-  margin-left: -33px;
+  margin-left: -23px;
   margin-bottom: 13px;
   cursor: pointer;
 }
 
 .galleryItem img {
-  width: 87.5%;
+  width: 105%;
 }
 .gallery-span {
   font-family: "Sacramento";
-  margin: -60px 0px 30px -15px;
+  margin: -62px 0px 30px -7px;
   font-size: 17px;
 }
 
+.galleryItem:nth-last-child(-n + 3) {
+  margin-top: -50px;
+}
 @media (max-width: 450px) {
   .gallery {
     display: grid;

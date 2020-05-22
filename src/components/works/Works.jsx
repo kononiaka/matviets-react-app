@@ -14,18 +14,30 @@ class Works extends Component {
       { id: 5, src: require("../../img/no_img.jpg") },
       { id: 6, src: require("../../img/no_img.jpg") },
     ],
+    menuOpen: false,
+  };
+  handleMenu = () => {
+    this.setState(prevState => {
+      return { menuOpen: !prevState.menuOpen };
+    });
   };
   render() {
+    let menuOpen;
+
+    if (!this.state.menuOpen) {
+      menuOpen = <Links />;
+    }
     return (
       <>
-        <div className="container">
+        <div className="container-custom">
           <div className="menu-block">
-            <button className="menu-btn">Menu</button>
+            <button onClick={this.handleMenu} className="menu-btn">
+              Menu
+            </button>
           </div>
           <Header></Header>
           <div className="row">
-            <Links />
-            <div className="col-2 flex-column"></div>
+            {menuOpen}
             <div className="col">
               <Gallery elements={this.state.images} />
             </div>

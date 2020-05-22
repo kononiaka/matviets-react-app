@@ -1,10 +1,18 @@
 .menu-block {
-  text-align: right;
-  margin-top: 25px;
+  display: none;
 }
 
-.menu-btn {
-  cursor: pointer;
-  border: none;
-  background: transparent;
+@media (max-width: 450px) {
+  .menu-block {
+    display: block;
+    text-align: right;
+    margin-top: 25px;
+  }
+
+  .menu-btn {
+    cursor: pointer;
+    border: none;
+    background: transparent;
+    font-size: 12px;
+  }
 }

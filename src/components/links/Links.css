@@ -5,13 +5,13 @@ h3 {
 h6 {
   text-align: center;
 }
-@media (max-width: 1800px) {
+@media (max-width: 1900px) {
   .header-menu {
     display: none;
   }
   .links {
-    padding-left: 17px;
     width: 25%;
+    color: black;
   }
 
   .works-text {
@@ -72,11 +72,10 @@ h6 {
     display: none;
   }
   .links {
-    top: 0;
-    right: 50px;
+    top: 00px;
     width: 100%;
-    position: fixed;
-    background-color: grey;
+    position: relative;
+    background-color: black;
     color: #fff;
     z-index: 999;
     text-align: center;
