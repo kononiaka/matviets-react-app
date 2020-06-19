@@ -1,12 +1,16 @@
 .about-img img {
-  width: 130%;
-  height: 40%;
+  width: 120%;
+  height: 600px;
   margin-top: -50px;
-  margin-left: -300px;
+  margin-left: -400px;
 }
 
 .works-text {
-  margin-left: -225px;
+  margin-left: -525px;
+}
+
+.about-img.col {
+  height: 50%;
 }
 
 @media (max-width: 450px) {

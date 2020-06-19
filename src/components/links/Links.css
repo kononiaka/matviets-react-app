@@ -5,52 +5,53 @@ h3 {
 h6 {
   text-align: center;
 }
+
+.nav-link-custom {
+  color: black;
+  opacity: 0.8;
+  transition: all 0.5s ease;
+  font-family: "Sacramento";
+  margin: 27px 0 0px 0px;
+  font-weight: normal;
+  font-size: 17px;
+  letter-spacing: 0.2em;
+}
+
+.links {
+  width: 25%;
+  color: black;
+}
+
+.works-text {
+  text-align: center;
+  padding-top: 100px;
+}
+
+.nav-link-custom:first-child {
+  padding-top: 40px;
+}
+
+.nav-link-custom:last-child {
+  margin-top: 24px;
+}
+
+.nav-link-custom:hover {
+  color: black;
+  opacity: 1;
+  transition-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+  text-decoration: none;
+}
+
+.nav-link-custom.active {
+  color: black;
+  font-weight: 600;
+}
+.fab.fa-instagram {
+  font-size: 23px;
+}
 @media (max-width: 2048px) {
   .header-menu {
     display: none;
-  }
-  .links {
-    width: 25%;
-    color: black;
-  }
-
-  .works-text {
-    text-align: center;
-    padding-top: 100px;
-  }
-
-  .nav-link-custom:first-child {
-    padding-top: 40px;
-  }
-
-  .nav-link-custom {
-    color: black;
-    opacity: 0.8;
-    transition: all 0.5s ease;
-    font-family: "Sacramento";
-    margin: 27px 0 0px 0px;
-    font-weight: normal;
-    font-size: 17px;
-    letter-spacing: 0.2em;
-  }
-
-  .nav-link-custom:last-child {
-    margin-top: 24px;
-  }
-
-  .nav-link-custom:hover {
-    color: black;
-    opacity: 1;
-    transition-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
-    text-decoration: none;
-  }
-
-  .nav-link-custom.active {
-    color: black;
-    font-weight: 600;
-  }
-  .fab.fa-instagram {
-    font-size: 23px;
   }
 }
 @media (max-width: 450px) {

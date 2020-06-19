@@ -5,7 +5,7 @@ import Links from "./../links/Links";
 const Exhibition = () => {
   return (
     <>
-      <div className="container">
+      <div className="container-custom">
         <Header></Header>
         <div className="row">
           <Links></Links>

@@ -48,6 +48,8 @@ class Links extends Component {
         {menu}
         <a
           className="nav-link-custom"
+          target="_blank"
+          rel="noopener noreferrer"
           href="https://www.instagram.com/matviets_vladimir_artist/">
           <i className="fab fa-instagram"></i>
         </a>

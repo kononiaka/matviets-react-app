@@ -1,0 +1,11 @@
+.messageContainer {
+  left: 550px;
+  top: 250px;
+  position: fixed;
+  width: 50%;
+  height: 550px;
+  color: red;
+  border: 1px solid black;
+  z-index: 200;
+  background-color: #fff;
+}
