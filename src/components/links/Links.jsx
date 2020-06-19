@@ -40,6 +40,9 @@ class Links extends Component {
       );
     });
 
+    if (!this.props.show) {
+    }
+
     return (
       <div className="nav flex-column links">
         {menu}

@@ -7,7 +7,7 @@ import "./About.css";
 const About = () => {
   return (
     <>
-      <div className="container">
+      <div className="container-custom">
         <Header></Header>
         <div className="row">
           <Links></Links>

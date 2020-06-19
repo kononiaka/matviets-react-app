@@ -14,7 +14,7 @@ class Works extends Component {
       { id: 5, src: require("../../img/no_img.jpg") },
       { id: 6, src: require("../../img/no_img.jpg") },
     ],
-    menuOpen: false,
+    menuOpen: true,
   };
   handleMenu = () => {
     this.setState(prevState => {
@@ -24,8 +24,8 @@ class Works extends Component {
   render() {
     let menuOpen;
 
-    if (!this.state.menuOpen) {
-      menuOpen = <Links />;
+    if (this.state.menuOpen) {
+      menuOpen = <Links show={this.state.menuOpen} />;
     }
     return (
       <>

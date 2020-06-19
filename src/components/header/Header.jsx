@@ -7,7 +7,7 @@ const Header = () => {
     <React.Fragment>
       <div className="header col-3">
         <Link className="header-text" to="/">
-          MATVIETS VLADIMIR
+          MATVIETS &nbsp; VLADIMIR
         </Link>
       </div>
     </React.Fragment>

@@ -13,7 +13,7 @@ const Home = () => {
         <a
           className="home nav-link-custom"
           href="https://www.instagram.com/matviets_vladimir_artist/">
-          <i className="fab fa-instagram"></i>
+          <i className="home fab fa-instagram"></i>
         </a>
       </div>
     </>

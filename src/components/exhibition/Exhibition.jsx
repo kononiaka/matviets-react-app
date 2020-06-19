@@ -5,12 +5,12 @@ import Links from "./../links/Links";
 const Exhibition = () => {
   return (
     <>
-      <div className="container">
+      <div className="container-custom">
         <Header></Header>
         <div className="row">
           <Links></Links>
           <div className="col-2"></div>
-          <div className="col">
+          <div className="about-img col">
             <h6 className="works-text">
               Sorry. This content is currently unavailable
             </h6>
