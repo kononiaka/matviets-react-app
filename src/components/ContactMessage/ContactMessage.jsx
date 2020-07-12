@@ -5,7 +5,13 @@ const ContactMessage = props => {
   return (
     <div className="messageContainer">
       <div className="contact-container">
-        <div className="contact-text">Send a message</div>
+        <div className="contact-text-container">
+          <div className="contact-text">Send a message</div>
+          <i
+            onClick={props.click}
+            className="fa fa-times"
+            aria-hidden="true"></i>
+        </div>
         <div className="form-group">
           <label htmlFor="Name">Name</label>
           <div className="form-group-text">

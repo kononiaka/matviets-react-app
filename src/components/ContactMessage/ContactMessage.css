@@ -12,11 +12,22 @@
   margin: 0 auto;
   width: 90%;
 }
+
+.contact-text-container {
+  display: flex;
+  justify-content: space-between;
+}
 .contact-text {
   margin-top: 50px;
   font-size: 22px;
   color: #000;
   letter-spacing: 0.2em;
+  display: inline-block;
+}
+
+.fa-times {
+  cursor: pointer;
+  margin-top: 25px;
 }
 
 label {
@@ -58,4 +69,16 @@ input[type="submit"] {
   border: none;
   color: #fff;
   text-decoration: none;
+  transition: all ease-in-out 0.8s;
+  border: 3px solid transparent;
 }
+
+/* input[type="submit"]:hover {
+  height: 50px;
+  width: 150px;
+  background-color: #fff;
+  border: none;
+  color: #000;
+  text-decoration: none;
+  border: 3px solid black;
+} */
